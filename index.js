@@ -26,20 +26,7 @@
     },
     ];*/
    // Example POST method implementation:
-async function getData(url = '') {
-  // Default options are marked with *
-  const response = await fetch(url, {
-    method: 'GET', // *GET, POST, PUT, DELETE, etc.
-    mode: 'no-cors', // no-cors, *cors, same-origin
-    cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
-    credentials: 'omit', // include, *same-origin, omi
-  });
-}
 
-getData('https://leaderboard-api-hng.herokuapp.com/data')
-  .then(data => {
-    console.log(data); // JSON data parsed by `response.json()` call
-  });
 /*// (C) TABLE HEADER
 var theWrap = document.getElementById("tableWrap");
 var theCell = null;
@@ -67,5 +54,18 @@ for (let key in parsed) {
   }
   altRow = !altRow;
 }
+  */
+$('#table4').DataTable({
+    ajax: {
+        url: 'https://leaderboard-api-hng.herokuapp.com/data',
+        crossDomain: true,
+        dataSrc: "roomsData"
+    },
+    columns: [
+        { data: 'name' },
+        { data: 'stage' },
+        { data: 'point' }
+    ],
+    "pageLength": 2
+});
 
-*/
