@@ -1,0 +1,26 @@
+[
+{
+"full name":"Barack obama",
+"username":"@barack",
+"email":"barack@gmail.com",
+"points":1
+},
+{
+"full name":"Barack obama",
+"username":"@barack",
+"email":"barack@gmail.com",
+"points":2
+},
+{
+"full name":"Barack obama",
+"username":"@barack",
+"email":"barack@gmail.com",
+"points":3
+},
+{
+"full name":"Barack obama",
+"username":"@barack",
+"email":"barack@gmail.com",
+"points":4
+},
+]
