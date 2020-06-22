@@ -5,8 +5,10 @@ const port = process.env.PORT || 3000;
 
 //opening a stream
 const readStream = fs.createReadStream('leaderboard.txt', 'utf8');
-//route to send tata
+//route to send data
+
 app.get('/data',(req,res)=> {
+
     //reading a stream and sending the data from the stream to the front end
     readStream.on('data', function(chunk) {
         res.send(chunk)

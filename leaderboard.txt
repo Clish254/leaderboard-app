@@ -1,26 +1,27 @@
 [
 {
-"full name":"Barack obama",
-"username":"@barack",
-"email":"barack@gmail.com",
+"name":"@barack",
+"stage":"3/10",
 "points":1
 },
 {
-"full name":"Barack obama",
-"username":"@barack",
-"email":"barack@gmail.com",
-"points":2
-},
-{
-"full name":"Barack obama",
-"username":"@barack",
-"email":"barack@gmail.com",
-"points":3
-},
-{
-"full name":"Barack obama",
-"username":"@barack",
-"email":"barack@gmail.com",
+"name":"@mike",
+"stage":"4/10",
 "points":4
+},
+{
+"name":"@br0ck",
+"stage":"3/10",
+"points":"6"
+},
+{
+"name":"@joe",
+"stage":"4/10",
+"points":"2"
+},
+{
+"name":"@hussein",
+"stage":"3/10",
+"points":"3"
 },
 ]
