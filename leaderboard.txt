@@ -2,12 +2,12 @@
 {
 "name":"@barack",
 "stage":"3/10",
-"points":1
+"points":"1"
 },
 {
 "name":"@mike",
 "stage":"4/10",
-"points":4
+"points":"4"
 },
 {
 "name":"@br0ck",
