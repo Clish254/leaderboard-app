@@ -11,7 +11,9 @@ app.get('/data',async (req,res)=> {
 
     //reading a stream and sending the data from the stream to the front end
     await readStream.on('data', function(chunk) {
-        res.send(chunk)
+        data += chunk;
+    }).on('end', function() {
+        console.log(data)
     })
 })
 
