@@ -5,13 +5,19 @@ const port = process.env.PORT || 3000;
 
 //opening a stream
 const readStream = fs.createReadStream('leaderboard.txt', 'utf8');
-//route to send data
 
+//route to send data
 app.get('/data', (req,res)=> {
-    //reading a stream and sending the data from the stream to the front end
-    readStream.on('data', function(chunk) {
-        res.send(chunk)
-    })
+    
+    const readStream = fs.createReadStream('leaderboard.txt', 'utf8');
+
+    readStream.on('error', function(error) {
+        res.writeHead(404, 'Not Found');
+        res.end();
+    });
+
+    readStream.pipe(res);
+
 })
 
 app.listen(port,()=>{
