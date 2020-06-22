@@ -8,12 +8,9 @@ const readStream = fs.createReadStream('leaderboard.txt', 'utf8');
 //route to send data
 
 app.get('/data', (req,res)=> {
-    data=""
     //reading a stream and sending the data from the stream to the front end
     readStream.on('data', function(chunk) {
-        data += chunk;
-    }).on('end', function() {
-        res.send(data)
+        res.send(chunk)
     })
 })
 
