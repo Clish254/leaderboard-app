@@ -7,13 +7,13 @@ const port = process.env.PORT || 3000;
 const readStream = fs.createReadStream('leaderboard.txt', 'utf8');
 //route to send data
 
-app.get('/data',async (req,res)=> {
+app.get('/data', (req,res)=> {
     data=""
     //reading a stream and sending the data from the stream to the front end
-    await readStream.on('data', function(chunk) {
+    readStream.on('data', function(chunk) {
         data += chunk;
     }).on('end', function() {
-        console.log(data)
+        res.send(data)
     })
 })
 
