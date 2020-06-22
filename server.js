@@ -11,7 +11,7 @@ app.get('/data',(req,res)=> {
 
     //reading a stream and sending the data from the stream to the front end
     readStream.on('data', function(chunk) {
-        res.send(JSON.stringify(chunk))
+        res.json(chunk)
     })
 })
 
