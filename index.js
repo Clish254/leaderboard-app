@@ -55,17 +55,5 @@ for (let key in parsed) {
   altRow = !altRow;
 }
   */
-$('#table4').DataTable({
-    ajax: {
-        url: 'https://leaderboard-api-hng.herokuapp.com/data',
-        crossDomain: true,
-        dataSrc: "roomsData"
-    },
-    columns: [
-        { data: 'name' },
-        { data: 'stage' },
-        { data: 'point' }
-    ],
-    "pageLength": 2
-});
+
 
