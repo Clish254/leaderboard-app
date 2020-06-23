@@ -4,4 +4,4 @@
 *Clone the repo<br>
 *In the root directory do <code>npm install</code> to install dependencies.<br>
 *Then run the app by doing <code>node server.js</code><br>
-*Go to your browser and enter <code>localhost:3000</code>
+*Go to your browser and enter <code>localhost:3000/data</code>
